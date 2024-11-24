@@ -30,15 +30,6 @@ body {
     animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
 .fade-out {
@@ -53,7 +44,7 @@ body {
 }
 
 .button {
-    width: 150px;
+    width: 180px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -63,7 +54,6 @@ body {
     text-align: center;
     border: none;
     background-size: 300% 100%;
-
     border-radius: 50px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -82,6 +72,82 @@ body {
 .button:focus {
     outline: none;
 }
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(var(--primaryColor), 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.hero-left {
+    flex: 1;
+    padding: clamp(2rem, 4vw, 3rem);
+}
+
+.breadcrumb {
+    color: var(--greyText);
+    font-size: clamp(0.75rem, 1.3vw, 1.2rem);
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+    font-weight: 500;
+}
+
+.breadcrumb>span {
+    color: red;
+}
+
+.text-holder>h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.text-holder>p {
+    font-size: clamp(0.875rem, 1.2vw, 1.2rem);
+    color: var(--greyText);
+    margin-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.text-holder>button {
+    background-color: rgba(var(--primaryColor), 0.8);
+    color: white;
+    border: none;
+    outline: none;
+    padding: clamp(0.75rem, 1.3vw, 1.3rem) clamp(2rem, 3vw, 3rem);
+    font-size: clamp(0.875rem, 1.2vw, 1.2rem);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.text-holder>button:hover {
+    background-color: rgb(var(--primaryColor));
+}
+
+.hero_right {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.hero_right>figure {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero_right>figure>img {
+    border-radius: inherit;
+    width: auto;
+    height: clamp(200px, 50vw, 430px);
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
 
 
 .button {
