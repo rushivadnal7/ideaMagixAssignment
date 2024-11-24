@@ -218,97 +218,107 @@
       <div
         class="hero-info lg:px-16 px-4 flex flex-col justify-center items-start gap-4"
       >
-        <h1 class="text-2xl font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </h1>
-        <span
-          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-          ducimus ullam culpa dicta impedit quia natus quod reiciendis,
-          reprehenderit alias.</span
-        >
-        <button class="bg-blue-500 px-4 py-2 button">Enquire Now</button>
+        <header>
+          <h1 class="text-2xl font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h1>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ducimus
+          ullam culpa dicta impedit quia natus quod reiciendis, reprehenderit
+          alias.
+        </p>
+        <footer>
+          <button class="bg-blue-500 px-4 py-2 button">Enquire Now</button>
+        </footer>
       </div>
     </section>
 
-    <div
+    <header
       class="selection-menu w-screen h-16 py-4 px-8 flex justify-center bg-white border-b-2 border-gray-200 items-center sticky top-0 z-30"
     >
-      <ul class="w-full hidden lg:flex justify-center gap-6 items-center">
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#overview"> Overview </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#eligibilty"> Eligibilty </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#preparation"> Preparation </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#about_treatment"> About Treatment </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#post_treatment"> Post-treatment Care </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#recovery-tips"> Recovery tips </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#FAQs"> FAQs </a>
-        </li>
-        <li class="cursor-pointer text-gray-600 hover:text-blue-300">
-          <a href="#patient_stories"> Patient stories </a>
-        </li>
-      </ul>
-      <div class="selector-div flex lg:hidden">
-        <select name="" id="" class="px-5 py-2 rounded-sm select">
-          <option value="open this menu">open this menu</option>
-          <option value="overview"><a href="#overview"> Overview </a></option>
-          <option value="eligibilty">
-            <a href="#eligibilty"> Eligibilty </a>
-          </option>
-          <option value="preparation">
+      <nav>
+        <ul class="w-full hidden lg:flex justify-center gap-6 items-center">
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
+            <a href="#overview"> Overview </a>
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
+            <a href="#eligibilty"> Eligibility </a>
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
             <a href="#preparation"> Preparation </a>
-          </option>
-          <option value="about treatment">
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
             <a href="#about_treatment"> About Treatment </a>
-          </option>
-          <option value="post-treament">
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
             <a href="#post_treatment"> Post-treatment Care </a>
-          </option>
-          <option value="recovery tips">
-            <a href="#recovery-tips"> Recovery tips </a>
-          </option>
-          <option value="FAQs"><a href="#FAQs"> FAQs </a></option>
-          <option value="patient stories">
-            <a href="#patient_stories"> Patient stories </a>
-          </option>
-        </select>
-      </div>
-    </div>
-    <div
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
+            <a href="#recovery-tips"> Recovery Tips </a>
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
+            <a href="#FAQs"> FAQs </a>
+          </li>
+          <li class="cursor-pointer text-gray-600 hover:text-blue-300">
+            <a href="#patient_stories"> Patient Stories </a>
+          </li>
+        </ul>
+        <div class="selector-div flex lg:hidden">
+          <select name="" id="" class="px-5 py-2 rounded-sm select">
+            <option value="open this menu">Open this menu</option>
+            <option value="overview"><a href="#overview">Overview</a></option>
+            <option value="eligibilty">
+              <a href="#eligibility">Eligibility</a>
+            </option>
+            <option value="preparation">
+              <a href="#preparation">Preparation</a>
+            </option>
+            <option value="about treatment">
+              <a href="#about_treatment">About Treatment</a>
+            </option>
+            <option value="post-treatment">
+              <a href="#post_treatment">Post-treatment Care</a>
+            </option>
+            <option value="recovery tips">
+              <a href="#recovery-tips">Recovery Tips</a>
+            </option>
+            <option value="FAQs"><a href="#FAQs">FAQs</a></option>
+            <option value="patient stories">
+              <a href="#patient_stories">Patient Stories</a>
+            </option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <main
       class="w-screen h-max flex flex-col justify-center gap-4 px-4 lg:px-[6rem] py-8"
       id="overview"
     >
-      <div class="flex justify-center gap-4">
-        <div class="overview-text w-[50%]">
+      <section class="flex justify-center gap-4">
+        <article class="overview-text w-[50%]">
           <h1 class="text-3xl font-bold my-2">
             Treatment Overview<span class="text-red-500">.</span>
           </h1>
-          <span class="my-2 text-gray-500"
-            >Knee replacement surgery — also known as knee arthroplasty — can
+          <p class="my-2 text-gray-500">
+            Knee replacement surgery — also known as knee arthroplasty — can
             help relieve pain and restore function in severely diseased knee
             joints. The procedure involves cutting away damaged bone and
-            cartilage from your thighbone, shinbone and kneecap and replacing it
-            with an artificial joint (prosthesis) made of metal alloys,
-            high-grade plastics and polymers.
-          </span>
-        </div>
-        <div class="image w-[50%] flex justify-end">
-          <img src="/assets/jpg" class="w-[400px] h-auto" alt="" />
-        </div>
-      </div>
+            cartilage from your thighbone, shinbone, and kneecap and replacing
+            it with an artificial joint (prosthesis) made of metal alloys,
+            high-grade plastics, and polymers.
+          </p>
+        </article>
+        <figure class="image w-[50%] flex justify-end">
+          <img
+            src="/assets/jpg"
+            class="w-[400px] h-auto"
+            alt="Knee Replacement Surgery"
+          />
+        </figure>
+      </section>
       <hr style="border-top: dotted 1.5px" class="text-blue-500" />
-    </div>
+    </main>
     <div class="w-screen flex flex-col lg:flex-row px-10 lg:px-[6rem]">
       <div class="left w-full lg:w-[80%]">
         <div
@@ -484,12 +494,16 @@
           </div>
           <hr style="border-top: dotted 1.5px" class="text-blue-500" />
         </div>
-        <div id="patient_stories" class="slider p-2">
-          <h1 class="text-2xl font-semibold">Patient Stories & Videos</h1>
+        <section id="patient_stories" class="slider p-2">
+          <header>
+            <h1 class="text-2xl font-semibold">Patient Stories & Videos</h1>
+          </header>
+
           <div class="owl-carousel owl-carousel-1 owl-theme">
-            <div class="slider-card border-[1.5px] p-2">
+            <!-- Article 1 -->
+            <article class="slider-card border-[1.5px] p-2">
               <div class="flex flex-col justify-center items-center mb-4">
-                <div class="heading w-full flex items-center justify-evenly">
+                <header class="heading w-full flex items-center justify-evenly">
                   <h2 class="text-black font-md text-xl">Patient Story 1</h2>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -501,16 +515,22 @@
                       d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
                     ></path>
                   </svg>
-                </div>
-                <div class="image w-[80%] h-[80%]">
-                  <img class="w-full h-full" src="/assets/jpg" alt="" />
-                </div>
+                </header>
+                <figure class="image w-[80%] h-[80%]">
+                  <img
+                    class="w-full h-full"
+                    src="/assets/jpg"
+                    alt="Patient Story 1"
+                  />
+                </figure>
               </div>
-            </div>
-            <div class="slider-card border-[1.5px] p-2">
+            </article>
+
+            <!-- Article 2 -->
+            <article class="slider-card border-[1.5px] p-2">
               <div class="flex flex-col justify-center items-center mb-4">
-                <div class="heading w-full flex items-center justify-evenly">
-                  <h2 class="text-black font-md text-xl">Patient Story 1</h2>
+                <header class="heading w-full flex items-center justify-evenly">
+                  <h2 class="text-black font-md text-xl">Patient Story 2</h2>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -521,16 +541,22 @@
                       d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
                     ></path>
                   </svg>
-                </div>
-                <div class="image w-[80%] h-[80%]">
-                  <img class="w-full h-full" src="/assets/jpg" alt="" />
-                </div>
+                </header>
+                <figure class="image w-[80%] h-[80%]">
+                  <img
+                    class="w-full h-full"
+                    src="/assets/jpg"
+                    alt="Patient Story 2"
+                  />
+                </figure>
               </div>
-            </div>
-            <div class="slider-card border-[1.5px] p-2">
+            </article>
+
+            <!-- Article 3 -->
+            <article class="slider-card border-[1.5px] p-2">
               <div class="flex flex-col justify-center items-center mb-4">
-                <div class="heading w-full flex items-center justify-evenly">
-                  <h2 class="text-black font-md text-xl">Patient Story 1</h2>
+                <header class="heading w-full flex items-center justify-evenly">
+                  <h2 class="text-black font-md text-xl">Patient Story 3</h2>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -541,236 +567,261 @@
                       d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
                     ></path>
                   </svg>
-                </div>
-                <div class="image w-[80%] h-[80%]">
-                  <img class="w-full h-full" src="/assets/jpg" alt="" />
-                </div>
+                </header>
+                <figure class="image w-[80%] h-[80%]">
+                  <img
+                    class="w-full h-full"
+                    src="/assets/jpg"
+                    alt="Patient Story 3"
+                  />
+                </figure>
               </div>
-            </div>
-            <div class="slider-card border-[1.5px] p-2">
-              <div class="flex flex-col justify-center items-center mb-4">
-                <div class="heading w-full flex items-center justify-evenly">
-                  <h2 class="text-black font-md text-xl">Patient Story 1</h2>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    class="block w-5 h-5 text-gray-400 mb-4"
-                    viewBox="0 0 975.036 975.036"
-                  >
-                    <path
-                      d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="image w-[80%] h-[80%]">
-                  <img class="w-full h-full" src="/assets/jpg" alt="" />
-                </div>
-              </div>
-            </div>
+            </article>
           </div>
-        </div>
+        </section>
       </div>
-      <div
+      <aside
         class="right lg:w-[20%] w-full rounded h-[80vh] px-4 flex flex-col justify-around items-center lg:sticky top-[4rem] border"
       >
-        <div>
+        <header>
           <h1 class="text-xl font-bold">Need Help?</h1>
-          <span class="text-gray-500 text-sm"
-            >Fill out the form below, and our experts will contact you.</span
-          >
-        </div>
+          <p class="text-gray-500 text-sm">
+            Fill out the form below, and our experts will contact you.
+          </p>
+        </header>
+
         <form
-          class="w-full flex flex-col justify-center items-center"
+          class="w-full px-4 flex flex-col justify-center items-center"
           action=""
+          method="post"
+          aria-labelledby="help-form"
         >
-          <input
-            class="border-[1.5px] rounded p-2 my-2"
-            type="text"
-            placeholder="name"
-          />
-          <input
-            class="border-[1.5px] rounded p-2 my-2"
-            type="text"
-            placeholder="email"
-          />
-          <input
-            class="border-[1.5px] rounded p-2 my-2"
-            type="text"
-            placeholder="phone number"
-          />
-          <textarea
-            class="border-[1.5px] rounded p-2 my-2"
-            name=""
-            id=""
-            placeholder="your message"
-          ></textarea>
+          <fieldset class="w-full">
+            <legend class="sr-only" id="help-form">
+              Contact Us for Assistance
+            </legend>
+
+            <label for="name" class="sr-only">Name</label>
+            <input
+              id="name"
+              class="border-[1.5px] rounded p-2 my-2"
+              type="text"
+              placeholder="name"
+              name="name"
+            />
+
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              class="border-[1.5px] rounded p-2 my-2"
+              type="email"
+              placeholder="email"
+              name="email"
+            />
+
+            <label for="phone" class="sr-only">Phone Number</label>
+            <input
+              id="phone"
+              class="border-[1.5px] rounded p-2 my-2"
+              type="tel"
+              placeholder="phone number"
+              name="phone"
+            />
+
+            <label for="message" class="sr-only">Your Message</label>
+            <textarea
+              id="message"
+              class="border-[1.5px] rounded p-2 my-2"
+              placeholder="your message"
+              name="message"
+            ></textarea>
+          </fieldset>
+
+          <button type="submit" class="button">Submit</button>
         </form>
-        <button class="button">submit</button>
-      </div>
+      </aside>
     </div>
     <section class="w-screen h-screen bg-blue-100">
       <div
         class="slider h-full flex flex-col justify-center items-center gap-4 p-2"
       >
-        <i class="font-bold text-xl text-red-500">Doctors</i>
-        <h1 class="text-2xl font-semibold">Top Orthopaedic Doctors</h1>
+        <header>
+          <h1 class="font-bold text-xl text-red-500">Doctors</h1>
+          <h2 class="text-2xl font-semibold">Top Orthopaedic Doctors</h2>
+        </header>
+
         <div class="owl-carousel owl-carousel-2 owl-theme">
-          <div class="slider-card h-[350px] h-[350px] bg-white p-2">
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
               class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
-              class="h-[30%] w-full flex flex-col justify-center items-center"
+              class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
-              class="h-[30%] w-full flex flex-col justify-center items-center"
+              class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
-              class="h-[30%] w-full flex flex-col justify-center items-center"
+              class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
-              class="h-[30%] w-full flex flex-col justify-center items-center"
+              class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image bg-red-300 w-full h-[70%]"></div>
             <div
-              class="h-[30%] w-full flex flex-col justify-center items-center"
+              class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <span class="text-gray-400">Lorem ipsum dolor consectetur</span>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <p class="text-gray-400">Lorem ipsum dolor consectetur</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
+
     <section class="w-screen h-screen">
       <div
         class="slider h-full flex flex-col justify-center items-center gap-4 p-2"
       >
-        <i class="font-bold text-xl text-red-500">Hospitals</i>
-        <h1 class="text-2xl font-semibold">recommended hospitals</h1>
+        <header>
+          <h1 class="font-bold text-xl text-red-500">Hospitals</h1>
+          <h2 class="text-2xl font-semibold">Recommended Hospitals</h2>
+        </header>
+
         <div class="owl-carousel owl-carousel-2 owl-theme">
-          <div class="slider-card h-[350px] h-[350px] bg-white p-2">
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] flex flex-col justify-center items-center w-full"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] w-full flex flex-col justify-center items-center"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] w-full flex flex-col justify-center items-center"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] w-full flex flex-col justify-center items-center"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] w-full flex flex-col justify-center items-center"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
-          <div class="slider-card h-[350px] bg-white p-2">
+          </article>
+
+          <article class="slider-card h-[350px] bg-white p-2">
             <div class="image w-full h-[70%]">
-              <img src="/assets/jpg" alt="" />
+              <img src="/assets/jpg" alt="Hospital Image" />
             </div>
             <div
               class="h-[30%] w-full flex flex-col justify-center items-center"
             >
-              <span class="text-blacl">Lorem ipsum dolor sit amet.</span>
-              <h1 class="text-red-500">Lorem ipsum dolor sit.</h1>
+              <p class="text-black">Lorem ipsum dolor sit amet.</p>
+              <h3 class="text-red-500">Lorem ipsum dolor sit.</h3>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <div
+    <section
       class="w-screen h-[300px] px-4 text-white flex flex-col justify-center items-center bg-blue-400"
     >
-      <span class="text-md">stay healthy and strong to enjoy life</span>
-      <span class="text-3xl">we have team of healthcare experts</span>
+      <p class="text-md">Stay healthy and strong to enjoy life</p>
+      <h2 class="text-3xl">We have a team of healthcare experts</h2>
+
       <div class="flex items-center justify-center gap-4">
-        <button class="button">button</button>
+        <button class="button">call us</button>
         <div class="border-r-4 border-blue-500 h-[50px]"></div>
         <span>+992783434</span>
       </div>
-    </div>
+    </section>
 
     <footer class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <section class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -790,8 +841,9 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          </article>
+
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -811,8 +863,9 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          </article>
+
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -832,8 +885,9 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          </article>
+
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -853,8 +907,9 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          </article>
+
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -874,8 +929,9 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
-          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          </article>
+
+          <article class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
@@ -895,18 +951,21 @@
                 <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
               </li>
             </nav>
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
+
       <div class="border-t border-gray-200">
-        <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <section
+          class="container px-5 py-8 flex flex-wrap mx-auto items-center"
+        >
           <div
             class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start"
           >
             <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-              <label for="footer-field" class="leading-7 text-sm text-gray-600"
-                >Placeholder</label
-              >
+              <label for="footer-field" class="leading-7 text-sm text-gray-600">
+                Placeholder
+              </label>
               <input
                 type="text"
                 id="footer-field"
@@ -922,6 +981,7 @@
               <br class="lg:block hidden" />waistcoat green juice
             </p>
           </div>
+
           <span
             class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto"
           >
@@ -981,33 +1041,12 @@
               >
                 <path
                   stroke="none"
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4V8a6 6 0 016-6z"
                 ></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
             </a>
           </span>
-        </div>
-      </div>
-      <div class="bg-gray-100">
-        <div
-          class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
-        >
-          <p class="text-gray-500 text-sm text-center sm:text-left">
-            © 2024 rushikesh —
-            <a
-              href="https://twitter.com/knyttneve"
-              class="text-gray-600 ml-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              >@rushikesh</a
-            >
-          </p>
-          <span
-            class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"
-            >Enamel pin tousled raclette tacos irony</span
-          >
-        </div>
+        </section>
       </div>
     </footer>
 
