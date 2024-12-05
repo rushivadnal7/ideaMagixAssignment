@@ -44,7 +44,7 @@ body {
 }
 
 .button {
-    width: 180px;
+    width: 100%;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -54,7 +54,7 @@ body {
     text-align: center;
     border: none;
     background-size: 300% 100%;
-    border-radius: 50px;
+    border-radius: 10px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -76,10 +76,11 @@ body {
 .section1 {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(var(--primaryColor), 0.08);
     position: relative;
     z-index: 2;
 }
+
+
 
 .hero-left {
     flex: 1;
@@ -97,6 +98,8 @@ body {
     color: red;
 }
 
+
+
 .text-holder>h1 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
@@ -108,21 +111,6 @@ body {
     margin-bottom: clamp(2rem, 4vw, 4rem);
 }
 
-.text-holder>button {
-    background-color: rgba(var(--primaryColor), 0.8);
-    color: white;
-    border: none;
-    outline: none;
-    padding: clamp(0.75rem, 1.3vw, 1.3rem) clamp(2rem, 3vw, 3rem);
-    font-size: clamp(0.875rem, 1.2vw, 1.2rem);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.text-holder>button:hover {
-    background-color: rgb(var(--primaryColor));
-}
 
 .hero_right {
     flex: 1;
@@ -258,3 +246,159 @@ select:focus {
     background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
+
+
+.container-list>li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 12px;
+    width: 12px;
+    border: 4px solid rgba(blue, 0.8);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.footer-links-list>li::before {
+    content: '-';
+    color: red;
+}
+
+.footer-card {
+    background-color: #162b3c;
+    padding: clamp(10px, 2%, 20px);
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    max-width: 350px;
+    /* transform: translateY(0%); */
+}
+
+.wrapper-last {
+    transform: translateY(-20%);
+}
+
+.footer-card>figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.footer-card>figure>img {
+    width: clamp(50px, 10vw, 80px);
+    margin-bottom: clamp(10px, 2%, 15px);
+    border-radius: 5px;
+}
+
+.footer-card figcaption>h6 {
+    font-size: clamp(0.9rem, 1.5vw, 2rem);
+    font-weight: 500;
+}
+
+.footer-card figcaption>p {
+    color: #a9b9c9;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.footer-card>p {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    margin-top: clamp(10px, 2%, 15px);
+    color: #a9b9c9;
+}
+
+.lower-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+  
+  .lower-left > img {
+    width: clamp(150px, 25vw, 220px);
+    mix-blend-mode: hard-light;
+  }
+  
+  .lower-center {
+    flex: 2;
+    text-align: center;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    color: #a9b9c9;
+  }
+  
+  .lower_right {
+    text-align: center;
+  }
+  
+  .lower-center > h6,
+  .lower-right > h6 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: white;
+    font-weight: 500;
+  }
+  
+  .lower-center > p {
+    font-size: clamp(0.655rem, 2vw, 1rem);
+  }
+  
+  .lower-right > h6 {
+    margin-bottom: clamp(10px, 2%, 20px);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: clamp(10px, 2%, 15px);
+    margin: clamp(10px, 3%, 20px) 0;
+  }
+  
+  .social-icons > img {
+    width: clamp(20px, 5vw, 30px);
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  
+  .phone > p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+  
+  .phone > span {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: rgba(var(--primaryColor), 0.6);
+  }
+  
+  .copyright {
+    background-color: #05121a;
+    text-align: center;
+    padding: clamp(1rem, 35vw, 2rem);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  
+  .copyright > p {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+  }
+  
+  .copyright > article {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+  
+  .copyright > article > p {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    cursor: pointer;
+    transition: border 1s ease;
+  }
+  
+  .copyright > article > p:hover {
+    transition: border 1s ease;
+    border-bottom: 1px solid white;
+  }
