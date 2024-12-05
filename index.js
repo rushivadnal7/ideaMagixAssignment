@@ -3,7 +3,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         items: 2,
-        lazyLoad:true,
+        lazyLoad: true,
         responsiveClass: true,
         responsive: {
             0: {
@@ -23,7 +23,7 @@ $(document).ready(function () {
     $(".owl-carousel-2").owlCarousel({
         loop: true,
         margin: 10,
-        lazyLoad:true,
+        lazyLoad: true,
         items: 3,
         responsiveClass: true,
         responsive: {
@@ -68,23 +68,48 @@ closeMenuBtn.addEventListener('click', () => {
     menu.classList.add('-translate-x-full');
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//     const plusButton = document.querySelector('.plus');
+//     const minusButton = document.querySelector('.minus');
+//     const content = document.querySelector('.content');
+
+//     plusButton.addEventListener('click', () => {
+//         plusButton.classList.add('hidden');
+//         minusButton.classList.remove('hidden');
+//         content.classList.remove('max-h-0');
+//         content.classList.add('max-h-96');
+//     });
+
+//     minusButton.addEventListener('click', () => {
+//         plusButton.classList.remove('hidden');
+//         minusButton.classList.add('hidden');
+//         content.classList.remove('max-h-96');
+//         content.classList.add('max-h-0');
+//     });
+// });
 document.addEventListener('DOMContentLoaded', () => {
-    const plusButton = document.querySelector('.plus');
-    const minusButton = document.querySelector('.minus');
-    const content = document.querySelector('.content');
+    // Select all FAQ items
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    plusButton.addEventListener('click', () => {
-        plusButton.classList.add('hidden');
-        minusButton.classList.remove('hidden');
-        content.classList.remove('max-h-0');
-        content.classList.add('max-h-96');
-    });
+    faqItems.forEach((item) => {
+        const plusButton = item.querySelector('.plus');
+        const minusButton = item.querySelector('.minus');
+        const content = item.querySelector('.content');
 
-    minusButton.addEventListener('click', () => {
-        plusButton.classList.remove('hidden');
-        minusButton.classList.add('hidden');
-        content.classList.remove('max-h-96');
-        content.classList.add('max-h-0');
+        // Add event listeners for plus and minus buttons
+        plusButton.addEventListener('click', () => {
+            plusButton.classList.add('hidden');
+            minusButton.classList.remove('hidden');
+            content.classList.remove('max-h-0');
+            content.classList.add('max-h-96');
+        });
+
+        minusButton.addEventListener('click', () => {
+            plusButton.classList.remove('hidden');
+            minusButton.classList.add('hidden');
+            content.classList.remove('max-h-96');
+            content.classList.add('max-h-0');
+        });
     });
 });
 

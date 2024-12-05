@@ -352,7 +352,7 @@
                 hic magi dolour.
               </p>
               <p>Lorem ipsum dolor sit amet:</p>
-              <ul class="container-list list-disc list-inside  grid space-y-[clamp(0.5rem,1vw,1rem)]">
+              <ul class="container-list   grid space-y-[clamp(0.5rem,1vw,1rem)]">
                 <li class="relative pl-6 text-gray-600 text-[clamp(0.7rem,1vw,1rem)]">
                   Lorem ipsum dolor sit amet.
                 </li>
@@ -384,7 +384,7 @@
               hic magi dolour.
             </p>
             <p>Lorem ipsum dolor sit amet:</p>
-            <ul class="container-list list-disc list-inside  grid space-y-[clamp(0.5rem,1vw,1rem)]">
+            <ul class="container-list grid space-y-[clamp(0.5rem,1vw,1rem)]">
               <li class="relative pl-6 text-gray-600 text-[clamp(0.7rem,1vw,1rem)]">
                 Lorem ipsum dolor sit amet.
               </li>
@@ -395,6 +395,7 @@
                 Lorem ipsum dolor sit amet consectetur.
               </li>
             </ul>
+            
             </div>
             <hr style="border-top: dashed 1.5px" class="text-blue-500" />
           </article>
@@ -416,7 +417,7 @@
                 hic magi dolour.
               </p>
               <p>Lorem ipsum dolor sit amet:</p>
-              <ul class="container-list list-disc list-inside  grid space-y-[clamp(0.5rem,1vw,1rem)]">
+              <ul class="container-list   grid space-y-[clamp(0.5rem,1vw,1rem)]">
                 <li class="relative pl-6 text-gray-600 text-[clamp(0.7rem,1vw,1rem)]">
                   Lorem ipsum dolor sit amet.
                 </li>
@@ -448,7 +449,7 @@
               hic magi dolour.
             </p>
             <p>Lorem ipsum dolor sit amet:</p>
-            <ul class="container-list list-disc list-inside  grid space-y-[clamp(0.5rem,1vw,1rem)]">
+            <ul class="container-list   grid space-y-[clamp(0.5rem,1vw,1rem)]">
               <li class="relative pl-6 text-gray-600 text-[clamp(0.7rem,1vw,1rem)]">
                 Lorem ipsum dolor sit amet.
               </li>
@@ -480,7 +481,7 @@
                 hic magi dolour.
               </p>
               <p>Lorem ipsum dolor sit amet:</p>
-              <ul class="container-list list-disc list-inside  grid space-y-[clamp(0.5rem,1vw,1rem)]">
+              <ul class="container-list   grid space-y-[clamp(0.5rem,1vw,1rem)]">
                 <li class="relative pl-6 text-gray-600 text-[clamp(0.7rem,1vw,1rem)]">
                   Lorem ipsum dolor sit amet.
                 </li>
@@ -497,119 +498,139 @@
 
           <!-- article 6 -->
           <article
-            id="FAQs"
-            class="w-full h-max flex flex-col justify-center gap-4 py-8 px-2"
-          >
-            <div class="flex justify-center w-full flex-col gap-4">
-              <h2 class="text-3xl font-bold my-2">
-                Treatment FAQs<span class="text-red-500">.</span>
-              </h2>
-              <!-- question 1 -->
-              <div
-                class="flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300"
-              >
-                <!-- Plus icon (initially visible) -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4 plus cursor-pointer"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
+  id="FAQs"
+  class="w-full h-max flex flex-col justify-center gap-4 py-8 px-2"
+>
+  <div class="flex justify-center w-full flex-col gap-4">
+    <h2 class="text-3xl font-bold my-2">
+      Treatment FAQs<span class="text-red-500">.</span>
+    </h2>
 
-                <!-- Minus icon (initially hidden) -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4 minus cursor-pointer hidden"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M5 12h14"
-                  />
-                </svg>
-                <span
-                  >How long does it take to recover from a knee
-                  replacement?</span
-                >
-                <!-- Collapsible content (initially hidden) -->
-                <div
-                  class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-                >
-                  <p class="border-t-[1px] border-blue-300">
-                    Recovery from a knee replacement typically takes around 6
-                    weeks. However, this can vary depending on individual
-                    factors such as age, health, and adherence to post-operative
-                    exercises.
-                  </p>
-                </div>
-              </div>
+    <!-- Dynamic FAQ items -->
+    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 plus cursor-pointer"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
 
-              <!-- question 2 -->
-              <div
-                class="flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300"
-              >
-                <!-- Plus icon (initially visible) -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4 plus cursor-pointer"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 minus cursor-pointer hidden"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </svg>
 
-                <!-- Minus icon (initially hidden) -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4 minus cursor-pointer hidden"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M5 12h14"
-                  />
-                </svg>
-                <span
-                  >How long does it take to recover from a knee
-                  replacement?</span
-                >
-                <!-- Collapsible content (initially hidden) -->
-                <div
-                  class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
-                >
-                  <p class="border-t-[1px] border-blue-300">
-                    Recovery from a knee replacement typically takes around 6
-                    weeks. However, this can vary depending on individual
-                    factors such as age, health, and adherence to post-operative
-                    exercises.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dotted 1.5px" class="text-blue-500" />
-          </article>
+      <span>How long does it take to recover from a knee replacement?</span>
+      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <p class="border-t-[1px] border-blue-300">
+          Recovery from a knee replacement typically takes around 6 weeks.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 plus cursor-pointer"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 minus cursor-pointer hidden"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </svg>
+
+      <span>I can't travel alone so can some family member or friend of mine accompany me?</span>
+      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <p class="border-t-[1px] border-blue-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium enim beatae et eveniet odit totam natus voluptatum itaque laboriosam?
+        </p>
+      </div>
+    </div>
+    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 plus cursor-pointer"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 minus cursor-pointer hidden"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </svg>
+
+      <span>What is the success rate of this procedure?</span>
+      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <p class="border-t-[1px] border-blue-300">
+          The success rate of knee replacement surgeries is over 90%.
+        </p>
+      </div>
+    </div>
+    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 plus cursor-pointer"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-4 minus cursor-pointer hidden"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </svg>
+
+      <span>How do I share my reports and medical cases with the clinic of my choice</span>
+      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <p class="border-t-[1px] border-blue-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione minus rem pariatur, praesentium quam veniam illum sit obcaecati quaerat.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
           <!-- article -->
           <div id="patient_stories" class="slider p-2">
             <h2 class="text-2xl font-semibold">Patient Stories & Videos</h2>
@@ -925,7 +946,7 @@
         <h4 class="text-3xl">We have a team of healthcare experts</h4>
 
         <div class="flex items-center justify-center gap-4">
-          <button class="button">call us</button>
+          <button class="hero-button px-8 py-2 rounded hover:bg-blue-500 bg-blue-700">call us</button>
           <div class="border-r-4 border-blue-500 h-[50px]"></div>
           <span>+992783434</span>
         </div>

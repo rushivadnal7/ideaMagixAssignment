@@ -249,16 +249,24 @@ select:focus {
 
 
 .container-list>li::before {
-    content: "";
+    content: " ";
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: 50%;
+    left: 0;
+    /* Adjust this for alignment with text */
+    transform: translateY(-50%);
+    /* Centers the bullet vertically */
     height: 12px;
     width: 12px;
-    border: 4px solid rgba(blue, 0.8);
+    border: 4px solid rgba(0, 0, 255, 0.8);
+    /* Correct RGBA blue color */
     border-radius: 50%;
+    /* Makes it a circle */
     box-sizing: border-box;
+    background-color: white;
+    /* Optional: Add background for visibility */
 }
+
 
 
 .footer-links-list>li::before {
@@ -315,62 +323,62 @@ select:focus {
     justify-content: space-between;
     align-items: center;
     gap: clamp(1rem, 2vw, 2rem);
-  }
-  
-  .lower-left > img {
+}
+
+.lower-left>img {
     width: clamp(150px, 25vw, 220px);
     mix-blend-mode: hard-light;
-  }
-  
-  .lower-center {
+}
+
+.lower-center {
     flex: 2;
     text-align: center;
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     color: #a9b9c9;
-  }
-  
-  .lower_right {
+}
+
+.lower_right {
     text-align: center;
-  }
-  
-  .lower-center > h6,
-  .lower-right > h6 {
+}
+
+.lower-center>h6,
+.lower-right>h6 {
     font-size: clamp(1rem, 2vw, 1.5rem);
     color: white;
     font-weight: 500;
-  }
-  
-  .lower-center > p {
+}
+
+.lower-center>p {
     font-size: clamp(0.655rem, 2vw, 1rem);
-  }
-  
-  .lower-right > h6 {
+}
+
+.lower-right>h6 {
     margin-bottom: clamp(10px, 2%, 20px);
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     justify-content: center;
     gap: clamp(10px, 2%, 15px);
     margin: clamp(10px, 3%, 20px) 0;
-  }
-  
-  .social-icons > img {
+}
+
+.social-icons>img {
     width: clamp(20px, 5vw, 30px);
     aspect-ratio: 3/2;
     object-fit: contain;
-  }
-  
-  .phone > p {
+}
+
+.phone>p {
     font-size: clamp(1rem, 1.5vw, 1.2rem);
-  }
-  
-  .phone > span {
+}
+
+.phone>span {
     font-size: clamp(1rem, 1.5vw, 1.2rem);
     color: rgba(var(--primaryColor), 0.6);
-  }
-  
-  .copyright {
+}
+
+.copyright {
     background-color: #05121a;
     text-align: center;
     padding: clamp(1rem, 35vw, 2rem);
@@ -380,25 +388,25 @@ select:focus {
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
-  }
-  
-  .copyright > p {
+}
+
+.copyright>p {
     font-size: clamp(1rem, 1.2vw, 1.5rem);
-  }
-  
-  .copyright > article {
+}
+
+.copyright>article {
     display: flex;
     justify-content: center;
     gap: clamp(1rem, 2vw, 1.5rem);
-  }
-  
-  .copyright > article > p {
+}
+
+.copyright>article>p {
     font-size: clamp(1rem, 1.2vw, 1.5rem);
     cursor: pointer;
     transition: border 1s ease;
-  }
-  
-  .copyright > article > p:hover {
+}
+
+.copyright>article>p:hover {
     transition: border 1s ease;
     border-bottom: 1px solid white;
-  }
+}
