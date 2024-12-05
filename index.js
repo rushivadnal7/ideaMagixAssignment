@@ -68,27 +68,7 @@ closeMenuBtn.addEventListener('click', () => {
     menu.classList.add('-translate-x-full');
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const plusButton = document.querySelector('.plus');
-//     const minusButton = document.querySelector('.minus');
-//     const content = document.querySelector('.content');
-
-//     plusButton.addEventListener('click', () => {
-//         plusButton.classList.add('hidden');
-//         minusButton.classList.remove('hidden');
-//         content.classList.remove('max-h-0');
-//         content.classList.add('max-h-96');
-//     });
-
-//     minusButton.addEventListener('click', () => {
-//         plusButton.classList.remove('hidden');
-//         minusButton.classList.add('hidden');
-//         content.classList.remove('max-h-96');
-//         content.classList.add('max-h-0');
-//     });
-// });
 document.addEventListener('DOMContentLoaded', () => {
-    // Select all FAQ items
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach((item) => {
@@ -96,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const minusButton = item.querySelector('.minus');
         const content = item.querySelector('.content');
 
-        // Add event listeners for plus and minus buttons
         plusButton.addEventListener('click', () => {
             plusButton.classList.add('hidden');
             minusButton.classList.remove('hidden');

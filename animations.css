@@ -11,16 +11,14 @@
 
 .bubbles>span {
     position: absolute;
-    /* background: rgba(255, 71, 71, 0.15); */
     background: whitesmoke;
     border-radius: 50%;
-    animation: floatUp 10s ease-in-out infinite;
-    /* animation: moveShape 20s linear infinite; */
 }
 
 .bubbles>span:nth-child(1) {
     width: clamp(150px, 40vw, 300px);
     height: clamp(150px, 40vw, 300px);
+    animation: floatUp 10s ease-in-out infinite;
     top: -20%;
     left: -10%;
     animation-delay: 0s;
@@ -28,8 +26,9 @@
 
 .bubbles>span:nth-child(2) {
     width: clamp(150px, 25vw, 300px);
+    animation: floatUp 10s ease-in-out infinite;
     height: clamp(150px, 25vw, 300px);
-    bottom: -20%;
+    bottom: 20%;
     left: 30%;
     animation-delay: -5s;
     animation-duration: 25s;
@@ -38,11 +37,32 @@
 .bubbles>span:nth-child(3) {
     width: clamp(70px, 16vw, 200px);
     height: clamp(70px, 16vw, 200px);
-    top: -15%;
+    top: 5%;
+    animation: floatUp 10s ease-in-out infinite;
     left: 50%;
     animation-delay: -10s;
     animation-duration: 30s;
 }
+
+.bubbles>span:nth-child(4) {
+    width: clamp(70px, 16vw, 200px);
+    height: clamp(70px, 16vw, 200px);
+    animation: floatUp 10s ease-in-out infinite;
+    top: 40%;
+    right: 5%;
+    animation-delay: -10s;
+    animation-duration: 30s;
+}
+
+/* .bubbles>span:nth-child(5) {
+    width: clamp(70px, 16vw, 400px);
+    height: clamp(70px, 16vw, 400px);
+    top: -5%;
+    left: 70%;
+    animation: floatDown 10s ease-in-out infinite;
+    animation-delay: -10s;
+    animation-duration: 30s;
+} */
 
 @keyframes floatUp {
     0% {
@@ -51,35 +71,11 @@
     }
 
     100% {
-        transform: translateY(-100%) scale(1.5);
+        transform: translateY(-100%) scale(2);
         opacity: 0;
     }
 }
 
-/* Responsive bubbles animation for mobile screens */
-@media (max-width: 480px) {
-    .bubbles>span {
-        animation: expandAndFade 10s ease-in-out infinite;
-    }
-
-    /* Expand and fade animation */
-    @keyframes expandAndFade {
-        0% {
-            transform: scale(0.5);
-            opacity: 1;
-        }
-
-        50% {
-            transform: scale(1.5);
-            opacity: 0.8;
-        }
-
-        100% {
-            transform: scale(2);
-            opacity: 0;
-        }
-    }
-}
 
 
 .hero_right>figure::before {
@@ -87,7 +83,6 @@
     position: absolute;
     top: -0%;
     right: -30%;
-    /* Adjust for better visibility */
     width: 600px;
     height: 600px;
     border: 10px solid skyblue;
@@ -95,10 +90,8 @@
     border-radius: 50%;
     z-index: -1;
     transition: all 0.3s ease;
-    /* Add smooth transitions for resizing */
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .hero_right>figure::before {
         width: 400px;
@@ -110,6 +103,7 @@
 
 @media (max-width: 768px) {
     .hero_right>figure::before {
+        display: none;
         width: 300px;
         height: 300px;
         top: -10%;
@@ -124,7 +118,6 @@
     }
 
     .hero_right {
-        /* border: 1px solid gray; */
         width: 100%;
         height: 50%;
         padding: 20px;

@@ -6,6 +6,7 @@
     <title>HERMANOS</title>
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/animations.css" />
+    <link rel="stylesheet" href="/responsive.css  " />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -31,12 +32,12 @@
     <header
       class="w-screen overflow-x-hidden h-11 lg:h-20 px-4 lg:px-12 flex items-center justify-center gap-8 lg:justify-center"
     >
-      <!-- Hidden in mobile view, visible on desktop -->
+ 
       <div class="logo w-18 h-12 hidden lg:block">
         <img class="w-full h-full" src="/assets/header-logo.png" alt="Logo" />
       </div>
 
-      <!-- Visible in mobile view, hidden on desktop -->
+
       <div class="lg:hidden flex justify-between items-center w-screen">
         <div class="flex w-full justify-around items-center gap-4">
           <div class="header-image w-8 h-8">
@@ -58,7 +59,6 @@
         </div>
       </div>
 
-      <!-- For Desktop: Contact info & images -->
       <div class="hidden lg:flex gap-10">
         <div class="flex gap-4 items-center">
           <div class="header-image w-11 h-11">
@@ -105,7 +105,7 @@
     >
       <div class="flex w-full justify-around items-center">
         <!-- Hamburger menu button (visible on mobile) -->
-        <div class="md:hidden">
+        <div class=" hamburger-menu">
           <button id="menu-btn" class="text-white focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,12 +125,12 @@
         </div>
 
         <!-- Brand/logo -->
-        <div class="w-max h-10 lg:hidden">
+        <div class="w-max h-10 navbar-logo">
           <img class="w-max h-full" src="/assets/header-logo.png" alt="Logo" />
         </div>
 
         <!-- Navbar links (hidden on mobile) -->
-        <ul id="navbar" class="hidden md:flex space-x-6">
+        <ul id="navbar" class=" space-x-6 navbar-links">
           <li class="relative">
             <a href="#" class="nav-link active text-white">Home</a>
           </li>
@@ -158,7 +158,7 @@
         </ul>
 
         <!-- Mobile Search bar -->
-        <div class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded">
+        <div class="search-bar bg-blue-600 text-white px-4 py-2 rounded">
           <input
             type="text"
             placeholder="Search"
@@ -212,6 +212,7 @@
       <!-- section 1 -->
       <section class="section1 bg-slate-300 flex flex-col md:flex-row items-center justify-between p-4">
         <div class="bubbles">
+          <span class="shape"></span>
           <span class="shape"></span>
           <span class="shape"></span>
           <span class="shape"></span>
@@ -322,7 +323,7 @@
         <figure class="image w-full lg:w-[50%] flex justify-center lg:justify-end">
           <img
             src="/assets/doctor_patient_image.jpg"
-            class="w-[300px] md:w-[400px] h-auto"
+            class="w-[300px] rounded-md md:w-[400px] h-auto"
             alt="Knee Replacement Surgery"
           />
         </figure>
@@ -333,7 +334,7 @@
     
 
       <!-- section 3 -->
-      <section class="w-screen flex  flex-col lg:flex-row px-10 lg:px-[6rem]">
+      <section class="section-3rd w-screen relative py-4  flex flex-col lg:flex-row px-10 lg:px-[6rem]">
         <div class="left w-full lg:w-[60%]">
           <!-- article 1 -->
           <article
@@ -498,138 +499,138 @@
 
           <!-- article 6 -->
           <article
-  id="FAQs"
-  class="w-full h-max flex flex-col justify-center gap-4 py-8 px-2"
->
-  <div class="flex justify-center w-full flex-col gap-4">
-    <h2 class="text-3xl font-bold my-2">
-      Treatment FAQs<span class="text-red-500">.</span>
-    </h2>
+              id="FAQs"
+              class="w-full h-max flex flex-col justify-center gap-4 py-8 px-2"
+            >
+              <div class="flex justify-center w-full flex-col gap-4">
+                <h2 class="text-3xl font-bold my-2">
+                  Treatment FAQs<span class="text-red-500">.</span>
+                </h2>
 
-    <!-- Dynamic FAQ items -->
-    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 plus cursor-pointer"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>
+                <!-- Dynamic FAQ items -->
+                <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 plus cursor-pointer"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 minus cursor-pointer hidden"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-      </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 minus cursor-pointer hidden"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
 
-      <span>How long does it take to recover from a knee replacement?</span>
-      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <p class="border-t-[1px] border-blue-300">
-          Recovery from a knee replacement typically takes around 6 weeks.
-        </p>
-      </div>
-    </div>
+                  <span>How long does it take to recover from a knee replacement?</span>
+                  <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="border-t-[1px] border-blue-300">
+                      Recovery from a knee replacement typically takes around 6 weeks.
+                    </p>
+                  </div>
+                </div>
 
-    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 plus cursor-pointer"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>
+                <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 plus cursor-pointer"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 minus cursor-pointer hidden"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-      </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 minus cursor-pointer hidden"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
 
-      <span>I can't travel alone so can some family member or friend of mine accompany me?</span>
-      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <p class="border-t-[1px] border-blue-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium enim beatae et eveniet odit totam natus voluptatum itaque laboriosam?
-        </p>
-      </div>
-    </div>
-    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 plus cursor-pointer"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>
+                  <span>I can't travel alone so can some family member or friend of mine accompany me?</span>
+                  <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="border-t-[1px] border-blue-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium enim beatae et eveniet odit totam natus voluptatum itaque laboriosam?
+                    </p>
+                  </div>
+                </div>
+                <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 plus cursor-pointer"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 minus cursor-pointer hidden"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-      </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 minus cursor-pointer hidden"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
 
-      <span>What is the success rate of this procedure?</span>
-      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <p class="border-t-[1px] border-blue-300">
-          The success rate of knee replacement surgeries is over 90%.
-        </p>
-      </div>
-    </div>
-    <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 plus cursor-pointer"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>
+                  <span>What is the success rate of this procedure?</span>
+                  <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="border-t-[1px] border-blue-300">
+                      The success rate of knee replacement surgeries is over 90%.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq-item flex items-center flex-wrap gap-4 border-b-[1px] py-6 border-gray-300">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 plus cursor-pointer"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-4 minus cursor-pointer hidden"
-      >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-      </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4 minus cursor-pointer hidden"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
 
-      <span>How do I share my reports and medical cases with the clinic of my choice</span>
-      <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <p class="border-t-[1px] border-blue-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione minus rem pariatur, praesentium quam veniam illum sit obcaecati quaerat.
-        </p>
-      </div>
-    </div>
-  </div>
-</article>
+                  <span>How do I share my reports and medical cases with the clinic of my choice</span>
+                  <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="border-t-[1px] border-blue-300">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione minus rem pariatur, praesentium quam veniam illum sit obcaecati quaerat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
 
           <!-- article -->
           <div id="patient_stories" class="slider p-2">
@@ -713,7 +714,7 @@
           </div>
         </div>
         <aside
-          class="right sticky top-[4rem] right-0 lg:w-[40%]  w-full rounded h-max px-4 flex flex-col   items-center  border"
+          class="right sticky top-[4rem] right-0 lg:w-[40%]  w-[400px] rounded h-max px-4 flex flex-col   items-center  border"
         >
           <em class="text-xl text-blue-200 font-bold m-2">Need Help?</em>
           <p class="text-gray-500 text-sm m-2">
@@ -773,7 +774,7 @@
       </section>
 
       <!-- section 4 -->
-      <section class="w-screen h-screen bg-blue-100">
+      <section class="w-screen h-auto py-6 bg-blue-100">
         <div
           class="slider h-full flex flex-col justify-center items-center text-center gap-4 p-2"
         >
@@ -852,7 +853,7 @@
       </section>
 
       <!-- section 5 -->
-      <section class="w-screen h-screen">
+      <section class="w-screen h-auto py-6">
         <div
           class="slider h-full flex flex-col justify-center items-center gap-4 p-2"
         >
@@ -1038,7 +1039,7 @@
             </nav>
           </article>
 
-          <!-- <div class="wrapper h-full border"> -->
+
         <div class="wrapper-last">
             <div class="footer-card">
               <figure>
@@ -1082,7 +1083,6 @@
       </section>
       <hr>
 
-      <!-- <div class="border-t border-gray-200"> -->
         <section class="lower-box p-8">
           <figure class="lower-left">
             <img src="/assets/header-logo.png" alt="" />
@@ -1120,7 +1120,7 @@
           <p>Privacy Policy</p>
         </article>
       </section>
-      <!-- </div> -->
+  
     </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
