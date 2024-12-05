@@ -29,7 +29,7 @@
       <div class="loader"></div>
     </div>
     <header
-      class="w-screen h-11 lg:h-20 px-4 lg:px-12 flex items-center justify-center gap-8 lg:justify-center"
+      class="w-screen overflow-x-hidden h-11 lg:h-20 px-4 lg:px-12 flex items-center justify-center gap-8 lg:justify-center"
     >
       <!-- Hidden in mobile view, visible on desktop -->
       <div class="logo w-18 h-12 hidden lg:block">
@@ -101,7 +101,7 @@
       </div>
     </header>
     <nav
-      class="bg-gradient-to-r from-blue-500 to-blue-700 h-16 w-screen flex justify-center items-center sticky top-0 z-20"
+      class="bg-gradient-to-r from-blue-500 to-blue-700 h-16 w-screen overflow-x-hidden flex justify-center items-center sticky top-0 z-20"
     >
       <div class="flex w-full justify-around items-center">
         <!-- Hamburger menu button (visible on mobile) -->
@@ -170,7 +170,7 @@
       <!-- Sliding Menu for Mobile -->
       <div
         id="menu"
-        class="fixed top-0 left-0 h-screen w-[50%] z-50 bg-blue-500 transform -translate-x-full transition-transform duration-300 ease-in-out"
+        class="fixed top-0 left-0 h-full w-[50%] z-50 bg-blue-500 transform -translate-x-full overflow-y-hidden transition-transform duration-300 ease-in-out"
       >
         <div class="flex justify-end p-4">
           <button id="close-menu" class="text-white focus:outline-none">
@@ -208,7 +208,7 @@
       </div>
     </nav>
 
-    <main>
+    <main class="overflow-x-hidden">
       <!-- section 1 -->
       <section class="section1 bg-slate-300 flex flex-col md:flex-row items-center justify-between p-4">
         <div class="bubbles">
@@ -245,7 +245,7 @@
       </section>
       
 
-      <nav>
+      <nav class=" w-full flex justify-center">
         <ul class="w-full hidden lg:flex justify-center gap-6 items-center">
           <li class="cursor-pointer text-gray-600 hover:text-blue-300">
             <a href="#overview"> Overview </a>
@@ -713,10 +713,10 @@
           </div>
         </div>
         <aside
-          class="right lg:w-[40%] w-full rounded h-[80vh] px-4 flex flex-col justify-around items-center lg:sticky top-[4rem] border"
+          class="right lg:w-[40%]  w-full rounded h-max px-4 flex flex-col   items-center lg:sticky top-[4rem] border"
         >
-          <em class="text-xl text-blue-200 font-bold">Need Help?</em>
-          <p class="text-gray-500 text-sm">
+          <em class="text-xl text-blue-200 font-bold m-2">Need Help?</em>
+          <p class="text-gray-500 text-sm m-2">
             Fill out the form below, and our experts will contact you.
           </p>
 
@@ -956,7 +956,7 @@
 
     <footer class="text-gray-600 body-font">
       <section class="container mx-auto relative">
-        <div class="flex flex-wrap justify-center items-center md:text-left text-center h-auto border  -mx-4">
+        <div class="flex flex-wrap justify-center items-center md:text-left text-center h-auto  -mx-4">
           <article class="lg:w-1/6 md:w-1/2 w-full  px-4">
             <h2
               class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3"
